@@ -189,10 +189,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
   startAnimation();
-
-
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       startAnimation();
@@ -201,7 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ===== Filtros dos projetos ===== //
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const filters = document.querySelectorAll(".filter");
@@ -255,11 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-
-
-
 // ===== toggle view ===== //
 
 // Seletores principais
@@ -286,6 +277,7 @@ function animateCards() {
 // ------------------------------
 // Alternância de visualização
 // ------------------------------
+
 gridBtn.addEventListener("click", () => {
   projectsGrid.classList.remove("projects-list");
   projectsGrid.classList.add("projects-grid");
@@ -311,6 +303,7 @@ listBtn.addEventListener("click", () => {
 // ------------------------------
 // Filtros de tecnologia
 // ------------------------------
+
 filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const filter = btn.textContent.trim().toLowerCase();
@@ -340,8 +333,6 @@ filterBtns.forEach((btn) => {
 window.addEventListener("DOMContentLoaded", () => {
   animateCards();
 });
-
-
 
 // ===== Form Contatos ===== //
 document.addEventListener("DOMContentLoaded", () => {
@@ -387,9 +378,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-  // pega todos os wrappers (caso você tenha mais de um)
   document.querySelectorAll('.form-wrapper').forEach((wrapper) => {
     const overlay = wrapper.querySelector('.overlay');
 
