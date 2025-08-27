@@ -1,3 +1,5 @@
+<h1 align="center">🌐 Portfólio – Abner Esquarcio</h1>
+
 <p align="center">
   <!-- Print 1 -->
   <img src="https://github.com/AbnerEsquarcio/Portifolio/blob/main/css/img/print1.png" width="800" alt="Screenshot do Portfólio - Home"/>
@@ -11,7 +13,6 @@
 </p>
 
 
-# 🌐 Portfólio – Abner Esquarcio
 
 ## 📌 Visão Geral
 Este é o meu portfólio pessoal desenvolvido para apresentar minha trajetória, habilidades e projetos.  
@@ -22,11 +23,14 @@ O objetivo é reunir informações profissionais em um único lugar e mostrar mi
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)  
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</p>
+
 
 ---
 
