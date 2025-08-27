@@ -1,13 +1,13 @@
 <p align="center">
   <!-- Print 1 -->
-  <img src="https://github.com/abneresquarcio/Portifolio/blob/main/assets/print1.png" width="800" alt="Screenshot do Portfólio - Home"/>
+  <img src="https://github.com/AbnerEsquarcio/Portifolio/blob/main/css/img/print1.png" width="800" alt="Screenshot do Portfólio - Home"/>
 </p>
 
 <p align="center">
   <!-- Print 2 -->
-  <img src="https://github.com/abneresquarcio/Portifolio/blob/main/assets/print2.png" width="400" alt="Screenshot do Portfólio - Sobre Mim"/>
+  <img src="https://github.com/AbnerEsquarcio/Portifolio/blob/main/css/img/print2.png" width="400" alt="Screenshot do Portfólio - Sobre Mim"/>
   <!-- Print 3 -->
-  <img src="https://github.com/abneresquarcio/Portifolio/blob/main/assets/print3.png" width="400" alt="Screenshot do Portfólio - Projetos"/>
+  <img src="https://github.com/AbnerEsquarcio/Portifolio/blob/main/css/img/print3.png" width="400" alt="Screenshot do Portfólio - Projetos"/>
 </p>
 
 
