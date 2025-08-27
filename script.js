@@ -11,9 +11,8 @@ dock.addEventListener("mousemove", (e) => {
     const itemCenter = itemRect.left + itemRect.width / 2 - rect.left;
     const distance = Math.abs(x - itemCenter);
 
-    // Ajuste da intensidade do efeito
     const scale = Math.max(1, 1.8 - distance / 90);
-    const lift = (scale - 1) * -18; // sobe mais quando maior
+    const lift = (scale - 1) * -18; 
 
     item.style.transform = `scale(${scale}) translateY(${lift}px)`;
   });
@@ -24,14 +23,6 @@ dock.addEventListener("mouseleave", () => {
     item.style.transform = "scale(1) translateY(0)";
   });
 });
-
-
-
-
-
-
-
-
 
 
 // ===== Navegação suave ===== //
@@ -97,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
     [
       { text: 'transformar', className: '' },
-      { text: 'codigo', className: '' },
+      { text: 'código', className: '' },
       { text: 'em', className: '' }
     ],
     [
@@ -109,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const introContainer = document.getElementById("intro");
   const animatedContainer = document.getElementById("animated-text");
   const btnGroup = document.querySelector(".btn-group");
-  const navLinks = document.querySelectorAll("nav a"); // <-- seus links de navegação
+  const navLinks = document.querySelectorAll("nav a"); 
   const delayStep = 200;
 
   // Cria span com animação para cada palavra
@@ -128,9 +119,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btnGroup.querySelectorAll('a.fancy-button').forEach(btn => {
       btn.classList.remove('underline-in');
       const icon = btn.querySelector('.hover-img');
-      if (icon) icon.remove(); // remove ícone temporariamente
-      btn.innerHTML = btn.textContent.trim(); // reseta texto
-      if (icon) btn.appendChild(icon); // reanexa ícone
+      if (icon) icon.remove(); 
+      btn.innerHTML = btn.textContent.trim(); 
+      if (icon) btn.appendChild(icon); 
     });
 
     // Renderiza intro
@@ -198,10 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Inicialização automática
+
   startAnimation();
 
-  // Ao clicar em qualquer link da nav, reinicia animação
+
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       startAnimation();
@@ -210,8 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ===== Filtros dos projetos ===== //
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -286,11 +275,8 @@ function animateCards() {
   const cards = document.querySelectorAll(".project-card");
 
   cards.forEach((card, i) => {
-    // remove classe show para resetar
     card.classList.remove("show");
-    // força reflow -> garante que a animação reinicie
     void card.offsetWidth;
-    // aplica com delay em cascata
     setTimeout(() => {
       card.classList.add("show");
     }, i * 120);
@@ -329,11 +315,9 @@ filterBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     const filter = btn.textContent.trim().toLowerCase();
 
-    // Marca botão ativo
     filterBtns.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
-    // Filtra os projetos
     document.querySelectorAll(".project-card").forEach((card) => {
       const tags = Array.from(card.querySelectorAll(".tags span")).map((t) =>
         t.textContent.trim().toLowerCase()
@@ -346,7 +330,6 @@ filterBtns.forEach((btn) => {
       }
     });
 
-    // Reanima os que ficaram
     animateCards();
   });
 });
@@ -367,7 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showToast(message, isSuccess = true) {
     toast.textContent = message;
-    toast.className = ""; // limpa classes
+    toast.className = "";
     toast.classList.add("show");
     toast.classList.add(isSuccess ? "success" : "error");
 
