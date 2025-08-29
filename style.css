@@ -1107,7 +1107,6 @@ h6 {
   align-items:flex-start;
 }
 
-/* agora o flex-basis fica no WRAPPER */
 .form-wrapper{
   position:relative;
   flex:1 1 55%;
@@ -1115,7 +1114,6 @@ h6 {
   width:100%;
 }
 
-/* a coluna da direita pode ficar assim */
 .connect{
   flex:1 1 35%;
   min-width:260px;
@@ -1129,7 +1127,7 @@ h6 {
   border:1px solid rgba(255,255,255,0.05);
   box-shadow:0 0 20px rgba(0,0,0,0.15);
   position:relative;
-  z-index:2; /* inputs acima do fundo, mas abaixo da overlay */
+  z-index:2; 
 }
 
 .contact-form h2{
@@ -1331,7 +1329,7 @@ textarea{ min-height:10rem; resize:vertical; }
 /* Responsivo */
 @media (max-width: 900px) {
   .content {
-    flex-direction: column; /* vira coluna */
+    flex-direction: column; 
     gap: 3rem;
     align-items: stretch;
   }
@@ -1344,8 +1342,8 @@ textarea{ min-height:10rem; resize:vertical; }
   }
 
   .connect {
-    text-align: center; /* centraliza textos */
-    align-items: center; /* centraliza conteúdo interno */
+    text-align: center; 
+    align-items: center; 
     padding: 1rem 0;
   }
 
@@ -1363,7 +1361,6 @@ textarea{ min-height:10rem; resize:vertical; }
 
 /* ========= FIX HARD MOBILE (iPhone XR e afins) ========= */
 @media (max-width: 600px) {
-  /* força coluna trocando para grid (mais forte que flex) */
   .contact-section .content {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -1372,17 +1369,16 @@ textarea{ min-height:10rem; resize:vertical; }
     gap: 2rem !important;
   }
 
-  /* zera restrições de largura dos filhos */
+
   .contact-section .form-wrapper,
   .contact-section .connect {
     min-width: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    flex: 0 0 auto !important; /* neutraliza os flex:1 1 55%/35% */
-    order: initial !important;  /* evita ordem residual */
+    flex: 0 0 auto !important; 
+    order: initial !important;  
   }
 
-  /* conteúdo da direita abaixo do form, centralizado no mobile */
   .contact-section .connect {
     margin-top: 0 !important;
     text-align: center !important;
