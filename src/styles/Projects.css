@@ -1,32 +1,37 @@
-.projects-section {
+.section-projects .projects-section {
   width: 100%;
-  background: var(--content-background);
+  background: transparent;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 10rem var(--gap) 20rem var(--gap);
+  padding: 0;
   color: var(--white-color);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects-title {
   font-weight: 800;
-  font-size: 6.5rem;
+  font-size: 3.5rem;
   text-align: left;
 }
 
 .projects-description {
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: var(--gray-color);
   max-width: 80rem;
-  margin: 1rem 0 3rem 0;
-  line-height: 1.6;
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.4;
 }
 
 .tech-filters {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .filter {
@@ -107,6 +112,35 @@
 
 .view-toggle.active-list .toggle-slider {
   transform: translateX(39px);
+}
+
+.section-projects .projects-grid,
+.section-projects .projects-list {
+  min-height: 0;
+  gap: 1rem;
+}
+
+.section-projects .project-thumb {
+  height: 120px;
+}
+
+.section-projects .project-content {
+  padding: 1rem 1.2rem;
+}
+
+.section-projects .project-content h3 {
+  font-size: 1.6rem;
+}
+
+.section-projects .project-content p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.section-projects .filter {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
 }
 
 .projects-grid {

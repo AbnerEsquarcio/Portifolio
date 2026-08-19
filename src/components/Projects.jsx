@@ -28,7 +28,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projetos" className="projects-section">
+    <div className="projects-section">
       <div className="main-content">
         <h1 className="projects-title">Projetos <span className="dot">.</span></h1>
         <p className="projects-description">
@@ -74,7 +74,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

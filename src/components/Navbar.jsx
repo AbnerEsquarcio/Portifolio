@@ -1,5 +1,6 @@
 import { useRef, useCallback } from 'react';
 import { navItems, socialLinks } from '../data';
+import { handleSectionClick } from '../utils/scrollToSection';
 import '../styles/Navbar.css';
 
 export default function Navbar() {
@@ -29,12 +30,7 @@ export default function Navbar() {
     });
   }, []);
 
-  const handleClick = (e, href) => {
-    if (!href.startsWith('#')) return;
-    e.preventDefault();
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
+  const handleClick = (event, href) => handleSectionClick(event, href);
 
   return (
     <div

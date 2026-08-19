@@ -46,7 +46,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contatos" className="contact-section">
+    <div className="contact-section">
       <div className="contact-container">
         <div className="intro-contact">
           <h1>Entre em contato <span className="dot">.</span></h1>
@@ -104,6 +104,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

@@ -2,10 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
-  margin-bottom: 12rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .timeline-section {
@@ -15,15 +15,15 @@
 }
 
 .timeline-section h2 {
-  font-size: 4rem;
+  font-size: 2.2rem;
   padding-left: 2%;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 .timeline-box {
   position: relative;
   padding-left: 3.5rem;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .timeline-line {
@@ -38,7 +38,7 @@
 
 .timeline-entry {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .timeline-marker {
@@ -62,7 +62,7 @@
   position: relative;
   background-color: #111318;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.2rem;
   border: 2px solid #111318;
   box-shadow: inset 0 0 .5rem var(--crimson-glow);
   transition: box-shadow .3s ease, border .3s ease;
@@ -80,7 +80,7 @@
 
 .timeline-header .timeline-title {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--secondary-color);
 }
@@ -96,15 +96,15 @@
 }
 
 .timeline-subtitle {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--gray-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .timeline-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #ccc;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 @media (max-width: 900px) {

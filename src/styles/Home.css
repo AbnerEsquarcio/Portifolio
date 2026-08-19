@@ -1,12 +1,12 @@
-.home-content {
+.section-home .home-content {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--gap);
-  height: 70vh;
+  height: 100%;
   flex-direction: column;
   text-align: center;
-  padding-top: 20rem;
+  padding-top: 0;
 }
 
 .home-img {
@@ -147,8 +147,8 @@
 }
 
 @media (max-width: 900px) {
-  .home-content {
-    padding-top: 10rem;
+  .section-home .home-content {
+    padding-top: 0;
     height: auto;
     gap: 2rem;
   }

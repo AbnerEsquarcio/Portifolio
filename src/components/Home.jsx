@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { handleSectionClick } from '../utils/scrollToSection';
 import '../styles/Home.css';
 
 const introText = "Olá, eu sou o Abner 👋";
@@ -114,13 +115,13 @@ export default function Home() {
       </div>
       <section className="home-btn">
         <div className="btn-group" ref={btnGroupRef}>
-          <a className="fancy-button" href="#sobre-mim">
+          <a className="fancy-button" href="#sobre-mim" onClick={(event) => handleSectionClick(event, '#sobre-mim')}>
             Mais sobre mim <span className="hover-img btn1" />
           </a>
-          <a className="fancy-button" href="#projetos">
+          <a className="fancy-button" href="#projetos" onClick={(event) => handleSectionClick(event, '#projetos')}>
             Meus Projetos <span className="hover-img btn2" />
           </a>
-          <a className="fancy-button" href="#contatos">
+          <a className="fancy-button" href="#contatos" onClick={(event) => handleSectionClick(event, '#contatos')}>
             Vamos Conversar! <span className="hover-img btn3" />
           </a>
         </div>
