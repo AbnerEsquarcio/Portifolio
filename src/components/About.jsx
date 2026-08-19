@@ -9,8 +9,8 @@ export default function About() {
       <div className="about-grid">
         <div className="about-left">
           <img src="/Portifolio/img/profile.png" alt="Foto de Abner Esquarcio" className="profile-image" />
-          <a href="/files/Abner Esquarcio - Curriculo.pdf" className="btn-download" download>
-            Meu Curriculum
+          <a href="/Portifolio/files/Curriculo.pdf" className="btn-download" download="Curriculo-Abner-Esquarcio.pdf">
+            Meu Currículo
           </a>
         </div>
 
