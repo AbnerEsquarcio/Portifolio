@@ -1,0 +1,148 @@
+:root {
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --main-color: #363333;
+  --gray-color: #a0a0a0;
+  --content-background: #0b0c10;
+  --background-main: #444;
+  --secondary-color: crimson;
+  --blue-dark: #007bff;
+  --blue-color: #1e90ff;
+  --underline-spacing: 0.2rem;
+  --gap: 2rem;
+  --fog-crimson: rgba(220, 20, 60, 0.671);
+  --crimson-glow: rgba(220, 20, 60, 0.123);
+  --crimson-border: rgba(220, 20, 60, 0.151);
+  --background-dark: #161214;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 2rem;
+  color: var(--white-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0b0c10;
+  line-height: 1.5;
+  padding: 40px 20px;
+  background-image:
+    linear-gradient(rgba(255, 0, 0, 0.062) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(189, 179, 179, 0.034) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.section {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  height: 1rem;
+}
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--white-color);
+}
+
+h1 { font-size: 6rem; }
+h2 { font-size: 5.5rem; }
+h3 { font-size: 5rem; }
+h4 { font-size: 4.5rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.5rem; }
+
+.dot {
+  color: var(--secondary-color);
+}
+
+.crimson {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Animations */
+.fade-section {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in-zoom {
+  animation: fadeInZoom 0.8s ease forwards;
+}
+
+.fade-in-blur {
+  animation: fadeInBlur 0.8s ease forwards;
+}
+
+@keyframes fadeInZoom {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInBlur {
+  from { opacity: 0; filter: blur(4px); transform: translateY(20px); }
+  to { opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade global */
+@media (max-width: 900px) {
+  html, body, main {
+    overflow: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 { font-size: 3.5rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 2.6rem; }
+}

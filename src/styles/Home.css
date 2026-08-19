@@ -1,0 +1,164 @@
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  height: 70vh;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20rem;
+}
+
+.home-img {
+  margin-bottom: 2rem;
+}
+
+.home-img img {
+  width: 192px;
+  height: 192px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 1.5rem var(--secondary-color);
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.intro-style {
+  background-image: linear-gradient(rgba(220, 20, 60, 0.329), crimson, crimson);
+  color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.fade-word {
+  opacity: 0;
+  transform: translateY(20px);
+  display: inline-block;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin-right: 0.5rem;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+#animated-text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  font-size: 7.3rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white-color);
+}
+
+#animated-text .underline {
+  position: relative;
+  background-image: linear-gradient(rgba(220, 20, 60, 0.329), crimson, crimson);
+  color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+#animated-text .underline::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--secondary-color);
+  border-radius: 2px;
+}
+
+.home-btn .btn-group {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.fancy-button {
+  position: relative;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  overflow: visible;
+}
+
+.fancy-button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--gray-color);
+  transition: width 0.4s ease, background-color 0.3s ease;
+  margin-top: -5px;
+  transform-origin: left;
+}
+
+.fancy-button.underline-in::after {
+  width: 30%;
+}
+
+.fancy-button:hover { color: var(--white-color); }
+
+.fancy-button:hover::after {
+  width: 100%;
+  background-color: var(--gray-color);
+}
+
+.fancy-button .hover-img {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  transform: translateY(10px) scale(0.6) rotate(10deg);
+  width: 50px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.fancy-button:hover .hover-img {
+  opacity: 0.4;
+  transform: translateY(0) scale(1) rotate(18deg);
+}
+
+.hover-img.btn1 {
+  background-image: url('https://img.icons8.com/?size=100&id=45140&format=png&color=FFFFFF');
+}
+.hover-img.btn2 {
+  background-image: url('https://img.icons8.com/?size=100&id=42335&format=png&color=FFFFFF');
+}
+.hover-img.btn3 {
+  background-image: url('https://img.icons8.com/?size=100&id=45722&format=png&color=FFFFFF');
+}
+
+@media (max-width: 900px) {
+  .home-content {
+    padding-top: 10rem;
+    height: auto;
+    gap: 2rem;
+  }
+  #animated-text { font-size: 4rem; }
+  .home-btn .btn-group {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #animated-text { font-size: 3rem; }
+}
