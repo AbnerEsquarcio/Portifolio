@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#261217"/>
+      <stop offset="1" stop-color="#120F14"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="93" y1="65" x2="418" y2="447" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF2B5B"/>
+      <stop offset="1" stop-color="#9C1537"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="220" fill="url(#bg)" stroke="url(#ring)" stroke-width="10"/>
+  <circle cx="256" cy="206" r="74" fill="#F0E7E9"/>
+  <path d="M144 380C144 321.458 191.458 274 250 274H262C320.542 274 368 321.458 368 380V395H144V380Z" fill="#F0E7E9"/>
+  <text x="256" y="460" text-anchor="middle" fill="#FFFFFF" font-size="34" font-family="Arial, sans-serif" font-weight="700">Abner Esquarcio</text>
+</svg>
